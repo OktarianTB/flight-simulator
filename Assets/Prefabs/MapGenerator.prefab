@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4788617944777688330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4788617944777688329}
+  - component: {fileID: 4788617944777688334}
+  - component: {fileID: 4788617944777688333}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4788617944777688329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788617944777688330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4788617944777688334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788617944777688330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5989eb77651fc274fa991a02c5ccf595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDetailLevels:
+  - lod: 0
+    visibleDistanceThreshold: 200
+  - lod: 2
+    visibleDistanceThreshold: 400
+  - lod: 4
+    visibleDistanceThreshold: 600
+  colliderLODIndex: 2
+  viewer: {fileID: 0}
+  mapMaterial: {fileID: 2100000, guid: 5e7d015198faa5a4ea99484574242bc4, type: 2}
+  meshSettings: {fileID: 11400000, guid: 1a3b25341ba54d248bea201407fe0479, type: 2}
+  heightMapSettings: {fileID: 11400000, guid: cdf0c2235b423924fbc56dcb2f67c123, type: 2}
+  simplexHeightMapSettings: {fileID: 11400000, guid: 977b90e7b5b7204469562938dabfb4d3,
+    type: 2}
+  textureSettings: {fileID: 11400000, guid: 04af995ab2b3632478d5f15154830368, type: 2}
+  viewerPosition: {x: 0, y: 0}
+--- !u!114 &4788617944777688333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788617944777688330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5947696bd841934194b8d44ebf77bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
